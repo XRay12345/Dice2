@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Dice.MainPage">
+    <VerticalStackLayout Padding="20" HorizontalOptions="Center" VerticalOptions="Center">
+        <Image x:Name="DiceImage" Source="dice_image.png" HeightRequest="200" />
+
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+            <RadioButton x:Name="K4RadioButton" Content="K4"/>
+            <RadioButton x:Name="K6RadioButton" Content="K6" IsChecked="True"/>
+            <RadioButton x:Name="K10RadioButton" Content="K10"/>
+            <RadioButton x:Name="K12RadioButton" Content="K12"/>
+        </StackLayout>
+
+        <Button Text="Roll Dice" Clicked="OnRollDiceClicked" HorizontalOptions="Center"/>
+
+        <Label x:Name="ResultLabel" Text="Result will appear here" 
+               FontSize="36" HorizontalOptions="Center" VerticalOptions="CenterAndExpand"/>
+    </VerticalStackLayout>
+</ContentPage>
